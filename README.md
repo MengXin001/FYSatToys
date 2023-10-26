@@ -1,8 +1,9 @@
 # FYSatToys
 Some toys about FengYun
 
-## FY3D-MWRI
-支持FY-3D微波成像仪数据产品：  
+## FY3D-MWRI/FY3G-MWRIRM
+支持FY-3D/3G微波成像仪数据产品：  
+### MWRI
 ```
 FY3D_MWRIA_GBAL_L1_YYYYMMDD_HHmm_010KM_MS.HDF 升轨
 FY3D_MWRID_GBAL_L1_YYYYMMDD_HHmm_010KM_MS.HDF 降轨
@@ -18,3 +19,9 @@ FY-3D 微波成像仪频率测试结果
 
 FY-3D 微波成像仪由于使用同一个主天线进行对地倾斜观测，因此地面足迹为大小不同的椭圆。  
 10.65GHz 地面足迹大小为 51Km×85Km，18.7GHz 地面足迹大小为 30Km×50Km，23.8GHz 地面足迹大小为 30Km×50Km，36.5GHz 地面足迹大小为 18Km×30Km，89GHz 地面足迹大小为 9Km×15Km。
+### MWRI-RM
+MWRI-RM 共 8 个馈源，分布在两排。  
+第一排由通道10GHz、18.7GHZ、23.8GHz、36GHz 以及 89GHz 构成，需要说明的是18.7 与23.8GHz共用一个馈源。  
+第二排由通道 54GHz、118GHz、166GHz 以及183GHz 构成。  
+
+不同排的馈源由于观测几何存在角度上的差异，因此数据集也分为了S1 与S2。MWRI-RM共17个频点，26 个通道（有些频点为双极化）。
